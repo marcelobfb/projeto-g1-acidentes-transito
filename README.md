@@ -9,9 +9,9 @@ Projeto G1 — Disciplina **Linguagem de Programação: Análise e Visualizaçã
 
 | Recurso | Link |
 |---|---|
-| Repositório GitHub | _preencher após o push_ |
-| Página do projeto (GitHub Pages) | _preencher após publicar_ |
-| Dashboard (Streamlit Community Cloud) | _preencher após o deploy_ |
+| Repositório GitHub | <https://github.com/marcelobfb/projeto-g1-acidentes-transito> |
+| Página do projeto (GitHub Pages) | <https://marcelobfb.github.io/projeto-g1-acidentes-transito/> |
+| Dashboard (Streamlit Community Cloud) | <https://projeto-g1-acidentes-transito-bfb.streamlit.app/> |
 | Notebook de análise | [`notebooks/analise_acidentes_transito.ipynb`](notebooks/analise_acidentes_transito.ipynb) |
 
 ## 🎯 Perguntas de negócio
