@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+database/*.db
+streamlit_log.txt
+http_log.txt
+.streamlit/secrets.toml

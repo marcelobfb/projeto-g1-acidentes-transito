@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acidentes de Trânsito no Brasil — G1</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f2937, #b91c1c);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 12px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 24px;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #b91c1c;
+      margin-top: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: #f8fafc;
+      border-left: 5px solid #b91c1c;
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .galeria figure {
+      margin: 0;
+      background: #f8fafc;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .galeria img {
+      width: 100%;
+      display: block;
+    }
+
+    .galeria figcaption {
+      padding: 10px 12px;
+      font-size: 0.9rem;
+      color: #475569;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 8px 8px 8px 0;
+      padding: 12px 18px;
+      background: #b91c1c;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .button.secondary {
+      background: #334155;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      background: #1f2937;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🚧 Acidentes de Trânsito no Brasil</h1>
+    <p>Projeto de análise e visualização de dados com Python, Pandas, SQLAlchemy e Streamlit</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Sobre o projeto</h2>
+      <p>
+        Este projeto apresenta uma análise exploratória de ocorrências simuladas de acidentes de
+        trânsito nas rodovias brasileiras entre 2015 e 2024, cobrindo as 5 regiões e 20 estados
+        do país, considerando volume de acidentes, feridos, óbitos, veículos envolvidos,
+        condições climáticas, período do dia e nível de gravidade.
+      </p>
+      <p>
+        A proposta é demonstrar um fluxo completo de projeto analítico: preparação dos dados,
+        análise exploratória, criação de indicadores, visualizações, dashboard interativo e
+        publicação em ambiente web.
+      </p>
+    </section>
+
+    <section>
+      <h2>Perguntas de negócio</h2>
+      <ul>
+        <li>Qual é o volume total de acidentes, feridos e óbitos no período analisado?</li>
+        <li>Quais regiões, estados e rodovias concentram mais ocorrências e mais óbitos?</li>
+        <li>Existe variação temporal (anual/mensal) relevante no número de acidentes?</li>
+        <li>Quais condições climáticas e períodos do dia são mais críticos?</li>
+        <li>Qual a relação entre veículos envolvidos e a quantidade de feridos/óbitos?</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Indicadores analisados</h2>
+      <div class="grid">
+        <div class="card"><strong>Total de Acidentes</strong><br>Soma das ocorrências registradas.</div>
+        <div class="card"><strong>Total de Óbitos</strong><br>Soma dos óbitos associados aos acidentes.</div>
+        <div class="card"><strong>Taxa de Letalidade</strong><br>Percentual de óbitos sobre o total de acidentes.</div>
+        <div class="card"><strong>Veículos Envolvidos</strong><br>Total de veículos envolvidos nas ocorrências.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Principais gráficos</h2>
+      <div class="galeria">
+        <figure>
+          <img src="imagens/acidentes_por_regiao.png" alt="Acidentes por região">
+          <figcaption>Total de acidentes por região (2015-2024)</figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/evolucao_anual.png" alt="Evolução anual">
+          <figcaption>Evolução anual de acidentes e óbitos</figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/clima_x_periodo.png" alt="Clima x período do dia">
+          <figcaption>Acidentes por condição climática x período do dia</figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/correlacao.png" alt="Matriz de correlação">
+          <figcaption>Correlação entre variáveis numéricas</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tecnologias utilizadas</h2>
+      <div class="grid">
+        <div class="card">Python</div>
+        <div class="card">Pandas</div>
+        <div class="card">Matplotlib</div>
+        <div class="card">Seaborn</div>
+        <div class="card">Plotly</div>
+        <div class="card">Streamlit</div>
+        <div class="card">SQLAlchemy</div>
+        <div class="card">SQLite</div>
+        <div class="card">GitHub Pages</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Arquivos do projeto</h2>
+      <p>Acesse os principais componentes do projeto:</p>
+      <a class="button secondary" href="README.md">Ver README</a>
+      <a class="button secondary" href="notebooks/analise_acidentes_transito.ipynb">Ver Notebook</a>
+      <a class="button secondary" href="dados/simulacao_acidentes_transito_brasil.csv">Baixar Base de Dados</a>
+    </section>
+
+    <section>
+      <h2>Dashboard interativo</h2>
+      <p>
+        O dashboard principal foi desenvolvido com Streamlit e permite explorar os dados por
+        meio de filtros múltiplos, KPIs dinâmicos, gráficos interativos e mapas.
+      </p>
+      <a class="button" href="https://share.streamlit.io" target="_blank" rel="noopener">Acessar Dashboard Streamlit</a>
+    </section>
+
+    <section>
+      <h2>Objetivo pedagógico</h2>
+      <p>
+        Este projeto serve como entrega da avaliação G1 da disciplina, mostrando como
+        transformar uma base de dados em um produto analítico completo, organizado e publicável.
+      </p>
+      <p>
+        <em>Mais importante do que criar gráficos é responder perguntas relevantes e apoiar a
+        tomada de decisão.</em>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    Projeto G1 — Linguagem de Programação: Análise e Visualização de Dados com Python
+  </footer>
+
+</body>
+</html>
