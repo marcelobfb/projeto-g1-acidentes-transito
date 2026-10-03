@@ -91,14 +91,6 @@ python database/models.py
 streamlit run app.py
 ```
 
-## 📓 Como abrir o notebook no Google Colab
-
-1. Acesse [colab.research.google.com](https://colab.research.google.com) e faça upload do
-   arquivo `notebooks/analise_acidentes_transito.ipynb`.
-2. Faça upload também do arquivo `dados/simulacao_acidentes_transito_brasil.csv` (ou monte o
-   Google Drive) e ajuste o caminho de leitura do CSV na primeira célula de código, se necessário.
-3. Execute as células em sequência (`Ambiente de execução → Executar tudo`).
-
 ## 📌 Conclusão executiva
 
 A análise identificou a região Sudeste como a de maior concentração de acidentes e óbitos no
