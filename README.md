@@ -2,6 +2,9 @@
 
 Projeto G1 — Disciplina **Linguagem de Programação: Análise e Visualização de Dados com Python**
 
+**Professor:** Alexandre Neves Louzada
+**Aluno:** Marcelo Bernardes
+
 > Análise exploratória, KPIs e dashboard interativo sobre ocorrências simuladas de acidentes de
 > trânsito nas rodovias brasileiras, cobrindo as 5 regiões e 20 estados do país entre 2015 e 2024.
 

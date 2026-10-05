@@ -63,6 +63,10 @@ def fmt(n: int) -> str:
 
 # ---------------------------------------------------------------- Cabeçalho
 st.title("🚧 Dashboard Executivo — Acidentes de Trânsito no Brasil")
+st.caption(
+    "Disciplina: Linguagem de Programação  |  Professor: Alexandre Neves Louzada  |  "
+    "Aluno: Marcelo Bernardes"
+)
 st.markdown(
     """
     Este dashboard analisa **ocorrências simuladas de acidentes de trânsito nas rodovias
